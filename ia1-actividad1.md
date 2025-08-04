@@ -35,9 +35,13 @@ La inteligencia artificial permite que este sistema tome decisiones en milisegun
 La inteligencia artificial (IA) es una rama de la informática que se dedica al desarrollo de sistemas capaces de realizar tareas que normalmente requieren inteligencia humana. Estas tareas incluyen, entre otras:
 
 •	Aprender de datos (aprendizaje automático)
+
 •	Reconocer patrones (como rostros, voz o texto)
+
 •	Tomar decisiones automatizadas
+
 •	Resolver problemas complejos
+
 •	Entender lenguaje natural
 
 La IA intenta reproducir o simular algunos aspectos del pensamiento humano usando algoritmos y modelos computacionales. No se trata de copiar el cerebro humano, sino de diseñar sistemas que resuelvan problemas o actúen con cierto grado de autonomía.
@@ -54,9 +58,13 @@ La IA se basa en conceptos como lógica, estadística, redes neuronales, árbole
 La inteligencia es la capacidad de un agente para adquirir conocimientos, razonar, adaptarse a nuevas situaciones y resolver problemas. En humanos, incluye habilidades como:
 
 •	La percepción
+
 •	El razonamiento
+
 •	La memoria
+
 •	La resolución de problemas
+
 •	El aprendizaje
 
 Es una función compleja del pensamiento que permite interactuar eficazmente con el entorno, planificar acciones, tomar decisiones y anticipar consecuencias.
