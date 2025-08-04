@@ -4,19 +4,29 @@
 
 Kronos, desarrollado por Ultimate Kronos Group (UKG), es un sistema que aplica inteligencia artificial para la gestión eficiente de turnos laborales en empresas. Este sistema utiliza algoritmos de aprendizaje automático para analizar información histórica de horarios, rendimiento laboral, ventas, clima y disponibilidad del personal. Con estos datos, realiza recomendaciones automáticas sobre la mejor distribución de turnos según la demanda y otros factores relevantes.
 La inteligencia artificial en Kronos permite:
+
 •	Predecir la cantidad de empleados necesarios para un turno determinado.
+
 •	Detectar patrones de ausentismo o sobrecarga laboral.
+
 •	Modificar automáticamente horarios ante cambios imprevistos (por ejemplo, faltas o aumentos repentinos en la demanda).
+
 •	Cumplir con normativas laborales, evitando asignaciones ilegales o no recomendadas.
+
 Gracias a estas capacidades, el sistema reduce costos, mejora la eficiencia organizacional y genera una experiencia más justa y organizada para los trabajadores.
 
 1.2) “See & Spray – Identificación de malezas con visión artificial”
 
 See & Spray, desarrollado por Blue River Technology, es una aplicación de inteligencia artificial que se usa en agricultura de precisión. Utiliza visión por computadora y aprendizaje automático para identificar malezas en los campos de cultivo y aplicar herbicidas únicamente en las áreas donde son necesarias.
+
 El sistema está montado en tractores y consiste en:
+
 •	Cámaras que capturan imágenes del suelo en tiempo real.
+
 •	Un algoritmo de clasificación de imágenes entrenado para distinguir entre cultivos y malezas.
+
 •	Un sistema de control automatizado que aplica herbicida solo sobre las malezas detectadas.
+
 La inteligencia artificial permite que este sistema tome decisiones en milisegundos, diferenciando con gran precisión las plantas no deseadas. Esto reduce el uso de productos químicos, disminuye costos y tiene un menor impacto ambiental, ya que evita rociar toda el área de cultivo indiscriminadamente.
 
 
