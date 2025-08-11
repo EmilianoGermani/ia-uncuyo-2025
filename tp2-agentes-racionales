@@ -1,0 +1,30 @@
+Ejercicio 1 (PEAS (Performance measure, Environment, Actuators. Sensors)
+
+Environment:
+
+Actuators:
+
+Sensors:
+
+Performance measure: 
+
+
+a) Jugar al CS
+
+Environment: Aliados, Enemigos, Objetos del mapa
+
+Actuators: Usuarios, NPCs/Bot
+
+Sensors: Area de Cercania, Activacion de Evento del Juego, Impacto de balas u objeto arrojable, Finalizacion de la Partida
+
+Performance measure: Cantidad de muertes/asistencias/asesinatos, partidas ganadas
+
+b) Explorar los oceanos
+
+Environment: Agua, Peces, Plantas, Barcos, Personas
+
+Actuators:
+
+Sensors:
+
+Performance measure: 
