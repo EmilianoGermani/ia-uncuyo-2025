@@ -11,19 +11,21 @@ Performance measure:
 
 a) Jugar al CS
 
-Environment: Aliados, Enemigos, Objetos del mapa
+Environment: Aliados, Enemigos, Objetos del mapa, minimapa
 
-Actuators: Disparar, Correr, Saltar, Apuntar, Curar
+Actuators: Disparar, Correr, Saltar, Apuntar, Curar, Comprar/Mejorar
 
 Sensors: Area de Cercania, Activacion de Evento del Juego, Impacto de balas u objeto arrojable, Finalizacion de la Partida
 
-Performance measure: Cantidad de muertes/asistencias/asesinatos, partidas ganadas
+Performance measure: Cantidad de muertes/asistencias/asesinatos, partidas ganadas, precision 
+
+Caracteristicas: Parcialmente observable, Multi-agente, estocastico, conocido, dinamico, continuo
 
 b) Explorar los oceanos
 
 Environment: Agua, Peces, Plantas, Barcos, Personas
 
-Actuators: Peces, 
+Actuators: 
 
 Sensors:
 
