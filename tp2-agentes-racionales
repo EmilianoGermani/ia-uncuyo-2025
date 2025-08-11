@@ -13,7 +13,7 @@ a) Jugar al CS
 
 Environment: Aliados, Enemigos, Objetos del mapa
 
-Actuators: Usuarios, NPCs/Bot
+Actuators: Disparar, Correr, Saltar, Apuntar, Curar
 
 Sensors: Area de Cercania, Activacion de Evento del Juego, Impacto de balas u objeto arrojable, Finalizacion de la Partida
 
@@ -23,7 +23,7 @@ b) Explorar los oceanos
 
 Environment: Agua, Peces, Plantas, Barcos, Personas
 
-Actuators:
+Actuators: Peces, 
 
 Sensors:
 
