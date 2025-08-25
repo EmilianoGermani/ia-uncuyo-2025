@@ -1,0 +1,32 @@
+2.10 Consider a modified version of the vacuum environment in Exercise 2.8, in which the agent is penalized one point for each movement.
+
+a) Can a simple reflex agent be perfectly rational for this environment? Explain.
+
+No, un agente reflexivo simple no puede ser perfectamente racional en este entorno. La razón es que el agente solo reacciona según lo que percibe en la casilla actual. Como cada movimiento tiene un costo, un agente que no recuerda dónde ya limpió podría moverse innecesariamente, gastando puntos. Por ejemplo, podría ir a una casilla limpia o ya visitada y pagar el costo de moverse, lo que no sería racional.
+
+b) What about a reflex agent with state? Design such an agent.
+
+Un agente reflexivo con estado sí puede acercarse a la racionalidad. Si el agente recuerda qué casillas ya visitó y cuáles están limpias o sucias, puede planear sus movimientos para evitar gastar puntos innecesarios, y limpiar todas las casillas sucias de manera más eficiente. El estado interno le permite tomar decisiones basadas en la historia de movimientos y no solo en la percepción actual.
+
+c) How do your answers to a and b change if the agent’s percepts give it the clean/dirty status of every square in the environment?
+
+Si el agente puede percibir el estado de todas las casillas de manera instantánea, incluso un agente reflexivo simple podría ser perfectamente racional. Esto se debe a que, con esa información completa, puede siempre moverse hacia la casilla sucia más cercana, minimizando movimientos innecesarios, sin necesidad de recordar nada.
+
+2.11 Consider a modified version of the vacuum environment in Exercise 2.8, in which the geography of the environment—its extent, boundaries, and obstacles—is unknown, as is the initial dirt configuration. (The agent can go Up and Down as well as Left and Right.)
+
+
+a. Can a simple reflex agent be perfectly rational for this environment? Explain.
+
+No, un agente reflexivo simple no puede ser perfectamente racional en un entorno desconocido. Al no conocer los límites, obstáculos ni la distribución inicial de la suciedad, no puede garantizar que limpiará todo de manera óptima. Solo reaccionaría a la casilla actual y podría quedarse atrapado o repetir movimientos innecesarios.
+
+b. Can a simple reflex agent with a randomized agent function outperform a simple reflex agent?
+
+Un agente reflexivo simple con comportamiento aleatorio puede mejorar el desempeño en comparación con un reflexivo fijo. Al moverse aleatoriamente cuando la casilla está limpia, tiene más posibilidades de explorar áreas desconocidas y eventualmente limpiar más casillas, aunque no de manera óptima.
+
+c. Can you design an environment in which your randomized agent will perform poorly?
+
+Es posible diseñar un entorno donde el agente aleatorio funcione mal. Por ejemplo, si algunas casillas sucias están en rincones difíciles de alcanzar, rodeadas por paredes o espacios estrechos, el agente podría tardar mucho en llegar a ellas o incluso no llegar dentro de un número limitado de movimientos.
+
+d. Can a reflex agent with state outperform a simple reflex agent? Design such an agent and measure its performance on several environments. Can you design a rational agent of this type?
+
+Un agente reflexivo con estado puede superar al reflexivo simple y al aleatorio. Al recordar qué casillas ya visitó y cuáles están sucias, puede planear sus movimientos para no repetir posiciones y limpiar de manera más eficiente. Este tipo de agente se acerca a la racionalidad, ya que combina la información de la percepción local con el conocimiento adquirido durante la exploración.
