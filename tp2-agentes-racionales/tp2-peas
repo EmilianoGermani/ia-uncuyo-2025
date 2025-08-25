@@ -1,32 +1,105 @@
 Ejercicio 1 (PEAS (Performance measure, Environment, Actuators. Sensors)
 
-Environment:
-
-Actuators:
-
-Sensors:
-
-Performance measure: 
-
-
 a) Jugar al CS
 
-Environment: Aliados, Enemigos, Objetos del mapa, minimapa
+Environment (Entorno): 
+Aliados, Enemigos, Objetos del mapa, minimapa
 
-Actuators: Disparar, Correr, Saltar, Apuntar, Curar, Comprar/Mejorar
+Actuators (Actuadores): 
+Disparar, Correr, Saltar, Apuntar, Curar, Comprar/Mejorar
 
-Sensors: Area de Cercania, Activacion de Evento del Juego, Impacto de balas u objeto arrojable, Finalizacion de la Partida
+Sensors (Sensores): 
+Area de Cercania, Activacion de Evento del Juego, Impacto de balas u objeto arrojable, Finalizacion de la Partida
 
-Performance measure: Cantidad de muertes/asistencias/asesinatos, partidas ganadas, precision 
+Performance measure (Medida de desempeño): 
+Cantidad de muertes/asistencias/asesinatos, partidas ganadas, precision 
 
-Caracteristicas: Parcialmente observable, Multi-agente, estocastico, conocido, dinamico, continuo
+Caracteristicas: 
+Parcialmente observable, Multi-agente, estocastico, conocido, dinamico, continuo
 
 b) Explorar los oceanos
 
-Environment: Agua, Peces, Plantas, Barcos, Personas
+Environment (Entorno):
+Agua, fauna marina, obstáculos naturales (rocas, arrecifes), corrientes marinas, clima, profundidad.
 
-Actuators: 
+Actuators (Actuadores):
+Propulsores del vehículo/robot, brazos robóticos para recolectar muestras, sensores de desplazamiento, luces, cámaras.
 
-Sensors:
+Sensors (Sensores):
+Cámaras, sonar, sensores de temperatura, presión y salinidad, sensores químicos para detectar contaminantes, GPS/submarino para localización.
 
-Performance measure: 
+Performance measure (Medida de desempeño):
+Cantidad y calidad de datos recolectados, seguridad del vehículo, eficiencia energética, cobertura del área explorada.
+
+Características del entorno:
+
+Parcialmente observable, Estocástico, Multi-agente, Dinámico, Continuo
+
+c) Comprar y vender tokens crypto (alguno).
+
+Environment (Entorno):
+Mercado de criptomonedas, exchanges, órdenes de otros traders, noticias económicas, regulación.
+
+Actuators (Actuadores):
+Comprar, vender, colocar órdenes límite, retirar fondos, ajustar estrategias.
+
+Sensors (Sensores):
+Precio actual de tokens, volumen de transacciones, historial de precios, noticias y alertas financieras.
+
+Performance measure (Medida de desempeño):
+Ganancias obtenidas, minimización de pérdidas, número de transacciones exitosas, tiempo de respuesta frente a cambios de mercado.
+
+Características del entorno:
+Parcialmente observable Estocástico, Multi-agente, Dinámico, Continuo
+
+d) Practicar tenis contra una pared.
+
+Environment (Entorno):
+Pared, cancha, raqueta, pelota, condiciones climáticas si es al aire libre.
+
+Actuators (Actuadores):
+Moverse, golpear la pelota, ajustar la fuerza y dirección del golpe.
+
+Sensors (Sensores):
+Vista de la pelota, posición de la raqueta, sensación táctil del golpe, sonido del rebote.
+
+Performance measure (Medida de desempeño):
+Precisión de los golpes, consistencia, cantidad de golpes exitosos consecutivos, control de velocidad y dirección.
+
+Características del entorno:
+Totalmente observable, Determinístico, Agente Simple, Dinámico, Continuo
+
+e) Realizar un salto de altura.
+
+Environment (Entorno):
+Pista de atletismo, barra de salto, colchoneta, condiciones climáticas si es al aire libre.
+
+Actuators (Actuadores):
+Correr, saltar, movimiento de brazos y piernas para impulso y equilibrio.
+
+Sensors (Sensores):
+Vista de la barra, posición del cuerpo, sensación táctil de la pista, percepción del equilibrio.
+
+Performance measure (Medida de desempeño):
+Altura alcanzada, técnica correcta, evitar derribar la barra, consistencia en intentos.
+
+Características del entorno:
+Totalmente observable, Determinístico, Agente Simple, Dinámico, Continuo
+
+f) Pujar por un artı́culo en una subasta.
+
+Environment (Entorno):
+Plataforma de subasta, otros pujadores, reglas de la subasta, tiempo restante, artículo en venta.
+
+Actuators (Actuadores):
+Realizar una puja, retirar la puja, establecer límites de gasto.
+
+Sensors (Sensores):
+Precio actual, pujas de otros participantes, tiempo restante, notificaciones de cambios.
+
+Performance measure (Medida de desempeño):
+Ganancia o utilidad obtenida (si se compra a buen precio), éxito en la adquisición del artículo, número de pujas exitosas.
+
+Características del entorno:
+Parcialmente observable, Estocástico, Multi-agente, Dinámico, Discreto
+
