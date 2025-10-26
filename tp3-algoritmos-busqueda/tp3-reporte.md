@@ -1,114 +1,113 @@
+Trabajo Práctico N°3 — Búsquedas Informadas y No Informadas
 
-Algoritmos de Búsqueda en el entorno FrozenLake  
+## 1. Introducción
 
-## 1️⃣ Descripción del experimento
+En este trabajo práctico se implementaron y compararon distintos **algoritmos de búsqueda informada y no informada** aplicados al entorno **FrozenLake** del paquete *Gymnasium*.  
+El objetivo fue analizar la eficiencia de cada método para encontrar una solución óptima (llegar al objetivo desde la posición inicial sin caer en los agujeros) y evaluar su desempeño en términos de **cantidad de estados explorados, número de acciones, costo total y tiempo de ejecución**.
 
-Se implementaron y evaluaron **seis algoritmos de búsqueda** sobre mapas aleatorios del entorno `FrozenLake`:
+Los algoritmos implementados fueron:
 
-- **Aleatoria**
-- **Búsqueda en Anchura (BFS)**
-- **Búsqueda en Profundidad (DFS)**
-- **Profundidad Limitada (DLS50)**
-- **Costo Uniforme (UCS)**
-- **A*** (A estrella)
+* **Búsqueda Aleatoria (Random Search)**
+* **Búsqueda en Anchura (BFS)**
+* **Búsqueda en Profundidad (DFS)**
+* **Búsqueda en Profundidad Limitada (DLS50)**
+* **Búsqueda de Costo Uniforme (UCS)**
+* **Búsqueda A\*** (A estrella)
 
-Cada algoritmo fue ejecutado sobre **30 mapas distintos**, en **dos escenarios**:
+El entorno consiste en un mapa cuadrado de tamaño 50×50, generado aleatoriamente con celdas seguras (‘F’), agujeros (‘H’), un inicio (‘S’) y una meta (‘G’).  
+El agente posee un **límite de vida de 1000 pasos**: si supera ese valor sin alcanzar la meta, se considera que falló la búsqueda.
+
+## 2. Metodología experimental
+
+Se evaluaron los seis algoritmos en **30 mapas distintos** (semillas 42 a 71) bajo **dos escenarios de costos**:
 
 1. **Escenario 1:** todas las acciones tienen costo 1.  
-2. **Escenario 2:** moverse arriba/abajo cuesta 10, y moverse izquierda/derecha cuesta 1.
+2. **Escenario 2:** moverse **arriba o abajo cuesta 10**, y moverse **izquierda o derecha cuesta 1**.
 
-Para cada ejecución se midieron:
-- `states_n`: cantidad de estados expandidos  
-- `actions_count`: cantidad total de acciones (escenario 1)  
-- `actions_cost`: costo total (escenario 2)  
-- `time`: tiempo de ejecución  
-- `solution_found`: si se halló o no una solución
+Para cada combinación de mapa, escenario y algoritmo, se registraron las siguientes métricas:
 
-Los resultados fueron almacenados en `results.csv` y visualizados mediante gráficos tipo **boxplot**.
+* `states_n`: cantidad de estados expandidos.  
+* `actions_count`: cantidad total de acciones realizadas.  
+* `actions_cost`: costo total acumulado.  
+* `time`: tiempo total de ejecución (en segundos).  
+* `solution_found`: valor booleano que indica si se alcanzó la meta.
 
----
+Los resultados fueron almacenados en el archivo **`results.csv`**, y los análisis estadísticos y visualizaciones se realizaron con *Pandas* y *Matplotlib* generando gráficos tipo **boxplot**.
 
-## 2️⃣ Resultados
+## 3. Resultados y análisis
 
-### 2.1 Cantidad de estados explorados (`states_n`)
+### 3.1 Distribución de estados explorados (`states_n`)
 
-![Boxplot de estados explorados](images/states_n_boxplot.png)
+![Distribución de estados explorados](images/states_n_boxplot.png)
 
-- **DFS** y **DLS50** presentan la mayor dispersión de valores, lo que refleja su comportamiento poco dirigido.  
-- **A\*** y **UCS** expanden significativamente menos estados, al considerar heurísticas y costos.  
-- **BFS** mantiene un número intermedio, mientras que **Aleatoria** no realiza exploración sistemática.
+* **DFS** y **DLS50** presentan una alta dispersión en la cantidad de estados expandidos, producto de su naturaleza de exploración exhaustiva y lineal.  
+* **BFS** muestra una expansión controlada, aunque mayor que A\* y UCS.  
+* **A\*** y **UCS** son los algoritmos más eficientes, con menor número de expansiones.  
+* **Aleatoria** prácticamente no expande estados, ya que depende del azar.
 
-**Conclusión:**  
-Los algoritmos informados (A\*, UCS, BFS) exploran menos y de forma más eficiente.
+**Conclusión:** los algoritmos informados (A\* y UCS) exploran menos estados y son más eficientes que los métodos no informados.
 
----
+### 3.2 Distribución de cantidad de acciones (`actions_count`)
 
-### 2.2 Cantidad de acciones (`actions_count`)
+![Distribución de cantidad de acciones](images/actions_count_boxplot.png)
 
-![Boxplot de cantidad de acciones](images/actions_count_boxplot.png)
+* **DFS** y **Aleatoria** realizan un gran número de pasos, evidenciando caminos más largos y erráticos.  
+* **BFS**, **UCS** y **A\*** producen caminos más cortos y consistentes.  
+* **DLS50** tiene valores intermedios, aunque puede fallar si la meta se encuentra más allá de su límite de profundidad.
 
-- **DFS** y **Aleatoria** generan caminos largos, con alta varianza.  
-- **BFS**, **UCS** y **A\*** logran los caminos más cortos y consistentes.  
-- **DLS50** tiene resultados acotados, pero falla con frecuencia por el límite de profundidad.
+**Conclusión:** A\* y UCS logran las rutas más cortas, mientras que DFS tiende a extender los caminos innecesariamente.
 
-**Conclusión:**  
-A\* y UCS son los más efectivos en minimizar la cantidad de pasos.
+### 3.3 Distribución de costo total (`actions_cost`)
 
----
+![Distribución de costo total](images/actions_cost_boxplot.png)
 
-### 2.3 Costo total de las acciones (`actions_cost`)
+* En el **escenario 2**, los costos penalizan fuertemente los movimientos verticales.  
+* **DFS** y **Aleatoria** presentan los mayores costos, al no priorizar movimientos económicos.  
+* **A\*** y **UCS** logran los menores costos, reflejando trayectorias más eficientes.  
+* **BFS** mantiene costos moderados, mientras que **DLS50** puede variar según el éxito de la búsqueda.
 
-![Boxplot de costo total de acciones](images/actions_cost_boxplot.png)
+**Conclusión:** los algoritmos informados adaptan su comportamiento al entorno, minimizando los costos globales.
 
-- En el **escenario 2**, los costos penalizan los movimientos verticales.  
-- **DFS** y **Aleatoria** muestran costos muy elevados, reflejando trayectorias ineficientes.  
-- **A\***, **UCS** y **BFS** mantienen costos bajos gracias a su planificación más óptima.
+### 3.4 Distribución del tiempo de ejecución (`time`)
 
-**Conclusión:**  
-Los algoritmos informados logran rutas horizontales más baratas.
+![Distribución del tiempo de ejecución](images/time_boxplot.png)
 
----
+* **DFS** presenta el mayor tiempo promedio debido a su exploración profunda.  
+* **A\*** y **UCS** consumen algo más de tiempo que BFS, pero obtienen soluciones óptimas.  
+* **Aleatoria** y **DLS50** son más rápidas, aunque su efectividad es baja.
 
-### 2.4 Tiempo de ejecución (`time`)
+**Conclusión:** los algoritmos informados son los más equilibrados entre tiempo y calidad de solución.
 
-![Boxplot de tiempo de ejecución](images/time_boxplot.png)
+## 4. Comparación general
 
-- **DFS** es el más lento debido a su exploración profunda sin control.  
-- **A\*** y **UCS** consumen más tiempo que BFS, pero compensan con soluciones óptimas.  
-- **Aleatoria** y **DLS50** son rápidas, aunque poco efectivas.
+| Algoritmo | Eficiencia | Optimalidad | Tiempo | Observaciones |
+|------------|-------------|-------------|---------|----------------|
+| **Aleatoria** | Muy baja | ❌ | Bajo | Sin dirección heurística, éxito aleatorio |
+| **BFS** | Alta | ✅ | Medio | Encuentra caminos óptimos, alto consumo de memoria |
+| **DFS** | Baja | ❌ | Alto | Explora profundamente, suele desviarse |
+| **DLS50** | Media | ❌ | Bajo | Puede fallar por límite de profundidad |
+| **UCS** | Muy alta | ✅ | Medio | Óptimo en costo, eficiente en exploración |
+| **A\*** | Muy alta | ✅ | Medio-Alto | Mejor equilibrio entre tiempo y calidad |
 
-**Conclusión:**  
-A\* y UCS alcanzan el mejor equilibrio entre tiempo y calidad de solución.
+**Síntesis:**  
+El algoritmo **A\*** ofrece el mejor rendimiento global, logrando soluciones óptimas con menor exploración y menor costo total.  
+**UCS** presenta resultados similares, mientras que **DFS** y **Aleatoria** son los menos eficientes.  
+**BFS** resulta efectivo pero costoso en memoria y tiempo.
 
----
+## 5. Conclusiones
 
-## 3️⃣ Conclusiones generales
+El análisis evidencia que los algoritmos informados (A\*, UCS) superan a los no informados (BFS, DFS, DLS) en eficiencia y calidad de solución.  
+A\* logra un equilibrio óptimo entre exploración, tiempo y costo, gracias a la utilización de una heurística admisible (distancia Manhattan).  
 
-| Algoritmo | Eficiencia | Óptimo | Tiempo | Observaciones |
-|------------|-------------|---------|---------|----------------|
-| **Aleatoria** | Muy baja | ❌ | Bajo | Sin control, éxito aleatorio |
-| **BFS** | Alta | ✅ | Medio | Encuentra soluciones óptimas, pero puede ser costoso en memoria |
-| **DFS** | Baja | ❌ | Alto | Explora en profundidad sin control, caminos largos |
-| **DLS50** | Media | ❌ | Bajo | Puede fallar si la solución está más profunda |
-| **UCS** | Muy alta | ✅ | Medio | Óptimo en costo, más eficiente que BFS |
-| **A\*** | Muy alta | ✅ | Medio-Alto | Equilibrio ideal entre costo, tiempo y exploración |
+Los resultados demuestran que, en entornos con diferentes costos de movimiento, los algoritmos informados logran adaptarse mejor, manteniendo bajo el número de estados expandidos y el costo total de las acciones.
 
-**Conclusión final:**  
-> El algoritmo **A\*** presenta el mejor desempeño global, alcanzando soluciones óptimas con menor exploración que BFS y menor costo que DFS.  
-> **UCS** logra resultados similares en entornos sin heurística.  
-> En contraposición, **DFS** y **Aleatoria** son los menos eficientes.
+## 6. Archivos generados
 
----
+* `results.csv` — resultados de 30×2×6 ejecuciones.  
+* `states_n_boxplot.png` — distribución de estados explorados.  
+* `actions_count_boxplot.png` — distribución de cantidad de acciones.  
+* `actions_cost_boxplot.png` — distribución del costo total.  
+* `time_boxplot.png` — distribución del tiempo de ejecución.
 
-## 4️⃣ Archivos generados
-
-- `results.csv` – resultados de 30×2×6 ejecuciones  
-- `states_n_boxplot.png` – cantidad de estados explorados  
-- `actions_count_boxplot.png` – cantidad de acciones (escenario 1)  
-- `actions_cost_boxplot.png` – costo total (escenario 2)  
-- `time_boxplot.png` – tiempo de ejecución  
-
-Todos los gráficos se generaron automáticamente con `matplotlib` y `pandas`.
-
-**Entorno:** Python 3.12 + Gymnasium + Matplotlib + Pandas
+💻 **Entorno:** Python 3.12 + Gymnasium + Matplotlib + Pandas  
 
