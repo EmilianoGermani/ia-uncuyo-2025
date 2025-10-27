@@ -1,0 +1,27 @@
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_setup.py:_flush():81] Configure stats pid to 5360
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_setup.py:_flush():81] Loading settings from /home/emiliano/.config/wandb/settings
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_setup.py:_flush():81] Loading settings from /home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/wandb/settings
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/wandb/offline-run-20251020_161939-4jti32kr/logs/debug.log
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/wandb/offline-run-20251020_161939-4jti32kr/logs/debug-internal.log
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_init.py:init():832] calling init triggers
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-20 16:19:39,984 INFO    MainThread:5360 [wandb_init.py:init():880] starting backend
+2025-10-20 16:19:40,197 INFO    MainThread:5360 [wandb_init.py:init():883] sending inform_init request
+2025-10-20 16:19:40,208 INFO    MainThread:5360 [wandb_init.py:init():891] backend started and connected
+2025-10-20 16:19:40,211 INFO    MainThread:5360 [wandb_init.py:init():961] updated telemetry
+2025-10-20 16:19:40,227 INFO    MainThread:5360 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-20 16:19:40,350 INFO    MainThread:5360 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-20 16:19:40,427 INFO    MainThread:5360 [wandb_run.py:_console_start():2509] atexit reg
+2025-10-20 16:19:40,427 INFO    MainThread:5360 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-10-20 16:19:40,428 INFO    MainThread:5360 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-10-20 16:19:40,428 INFO    MainThread:5360 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-10-20 16:19:40,429 INFO    MainThread:5360 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-20 16:19:40,431 INFO    MainThread:5360 [wandb_run.py:_config_callback():1392] config_cb None None {'alpha': 0.1, 'epsilon_start': 0.9, 'epsilon_end': 0.1, 'epsilon_max_episodes': 8000, 'gamma': 0.9, 'episodes': 5, 'test_each': 1000, 'test_for': 250, 'testing': True, 'experiment_name': 'Testing of Q-learning Agent', 'notes': 'This is an evaluation'}
+2025-10-20 16:19:40,431 INFO    MainThread:5360 [wandb_run.py:_config_callback():1392] config_cb None None {'previous_model_loaded': '/home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/q_agent_marl.experiment.pickle'}
+2025-10-20 16:19:40,438 INFO    MainThread:5360 [wandb_run.py:_config_callback():1392] config_cb None None {'netsecenv_commit': '84f180a0d756f5bfa1813fb7968dcadd961697f7', 'agents_commit': '84f180a0d756f5bfa1813fb7968dcadd961697f7'}
+2025-10-20 16:19:40,440 INFO    MainThread:5360 [wandb_run.py:_config_callback():1392] config_cb None None {'env_conf_path': './env/netsecenv_conf.yaml'}
+2025-10-20 16:19:40,458 INFO    wandb-AsyncioManager-main:5360 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-20 16:19:40,458 INFO    wandb-AsyncioManager-main:5360 [mailbox.py:close():137] Closing mailbox, abandoning 0 handles.

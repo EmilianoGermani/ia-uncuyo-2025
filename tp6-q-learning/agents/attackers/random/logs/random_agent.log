@@ -1,0 +1,526 @@
+17:33:02 RandomAttackerAgent INFO Agent created
+17:33:02 RandomAttackerAgent INFO Registering agent as Attacker
+17:33:02 RandomAttackerAgent INFO 	Registration successful! {'message': 'Welcome RandomAttackerAgent, registred as Attacker', 'max_steps': 100, 'goal_description': 'Exfiltrate data from Samba server to remote C&C server.', 'actions': ['ActionType.ScanNetwork', 'ActionType.FindServices', 'ActionType.FindData', 'ActionType.ExploitService', 'ActionType.ExfiltrateData', 'ActionType.BlockIP', 'ActionType.JoinGame', 'ActionType.QuitGame', 'ActionType.ResetGame'], 'configuration_hash': '3bf6e7ba9edbcf662e4338e7e60a9528c9c6f5b13579a570e3d999487ae8e3d7'}
+17:33:02 RandomAttackerAgent INFO Starting the testing for episode 1
+17:33:02 RandomAttackerAgent INFO Playing episode 0
+17:33:03 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:03 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:03 RandomAttackerAgent INFO Starting the testing for episode 2
+17:33:03 RandomAttackerAgent INFO Playing episode 0
+17:33:05 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:05 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:05 RandomAttackerAgent INFO Starting the testing for episode 3
+17:33:05 RandomAttackerAgent INFO Playing episode 0
+17:33:07 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:07 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:07 RandomAttackerAgent INFO Starting the testing for episode 4
+17:33:07 RandomAttackerAgent INFO Playing episode 0
+17:33:09 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:09 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:09 RandomAttackerAgent INFO Starting the testing for episode 5
+17:33:09 RandomAttackerAgent INFO Playing episode 0
+17:33:10 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:10 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:10 RandomAttackerAgent INFO Starting the testing for episode 6
+17:33:10 RandomAttackerAgent INFO Playing episode 0
+17:33:11 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:11 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:11 RandomAttackerAgent INFO Starting the testing for episode 7
+17:33:11 RandomAttackerAgent INFO Playing episode 0
+17:33:12 RandomAttackerAgent INFO Episode 0 ended with return-71. Mean returns=-71.0±0.0
+17:33:12 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -71.0±0.0
+17:33:12 RandomAttackerAgent INFO Starting the testing for episode 8
+17:33:12 RandomAttackerAgent INFO Playing episode 0
+17:33:13 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:13 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:13 RandomAttackerAgent INFO Starting the testing for episode 9
+17:33:13 RandomAttackerAgent INFO Playing episode 0
+17:33:14 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:14 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:14 RandomAttackerAgent INFO Starting the testing for episode 10
+17:33:14 RandomAttackerAgent INFO Playing episode 0
+17:33:18 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:18 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:18 RandomAttackerAgent INFO Tested after 10 episodes.
+                    Wins=1,
+                    Detections=0,
+                    winrate=10.000%,
+                    detection_rate=0.000%,
+                    average_returns=0.000 +- 33.000,
+                    average_episode_steps=97.200 +- 8.400,
+                    average_win_steps=72.000 +- 0.000,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:33:18 RandomAttackerAgent INFO Starting the testing for episode 11
+17:33:18 RandomAttackerAgent INFO Playing episode 0
+17:33:22 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:22 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:22 RandomAttackerAgent INFO Starting the testing for episode 12
+17:33:22 RandomAttackerAgent INFO Playing episode 0
+17:33:24 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:24 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:24 RandomAttackerAgent INFO Starting the testing for episode 13
+17:33:24 RandomAttackerAgent INFO Playing episode 0
+17:33:26 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:26 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:26 RandomAttackerAgent INFO Starting the testing for episode 14
+17:33:26 RandomAttackerAgent INFO Playing episode 0
+17:33:31 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:31 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:31 RandomAttackerAgent INFO Starting the testing for episode 15
+17:33:31 RandomAttackerAgent INFO Playing episode 0
+17:33:34 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:34 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:34 RandomAttackerAgent INFO Starting the testing for episode 16
+17:33:34 RandomAttackerAgent INFO Playing episode 0
+17:33:35 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:35 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:35 RandomAttackerAgent INFO Starting the testing for episode 17
+17:33:35 RandomAttackerAgent INFO Playing episode 0
+17:33:37 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:37 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:37 RandomAttackerAgent INFO Starting the testing for episode 18
+17:33:37 RandomAttackerAgent INFO Playing episode 0
+17:33:39 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:39 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:39 RandomAttackerAgent INFO Starting the testing for episode 19
+17:33:39 RandomAttackerAgent INFO Playing episode 0
+17:33:41 RandomAttackerAgent INFO Episode 0 ended with return-92. Mean returns=-92.0±0.0
+17:33:41 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -92.0±0.0
+17:33:41 RandomAttackerAgent INFO Starting the testing for episode 20
+17:33:41 RandomAttackerAgent INFO Playing episode 0
+17:33:43 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:43 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:43 RandomAttackerAgent INFO Tested after 20 episodes.
+                    Wins=2,
+                    Detections=0,
+                    winrate=10.000%,
+                    detection_rate=0.000%,
+                    average_returns=0.000 +- 33.000,
+                    average_episode_steps=98.250 +- 6.212,
+                    average_win_steps=82.500 +- 10.500,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:33:43 RandomAttackerAgent INFO Starting the testing for episode 21
+17:33:43 RandomAttackerAgent INFO Playing episode 0
+17:33:47 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:47 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:47 RandomAttackerAgent INFO Starting the testing for episode 22
+17:33:47 RandomAttackerAgent INFO Playing episode 0
+17:33:50 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:50 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:50 RandomAttackerAgent INFO Starting the testing for episode 23
+17:33:50 RandomAttackerAgent INFO Playing episode 0
+17:33:53 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:53 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:53 RandomAttackerAgent INFO Starting the testing for episode 24
+17:33:53 RandomAttackerAgent INFO Playing episode 0
+17:33:56 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:33:56 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:33:56 RandomAttackerAgent INFO Starting the testing for episode 25
+17:33:56 RandomAttackerAgent INFO Playing episode 0
+17:34:01 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:01 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:01 RandomAttackerAgent INFO Starting the testing for episode 26
+17:34:01 RandomAttackerAgent INFO Playing episode 0
+17:34:18 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:18 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:18 RandomAttackerAgent INFO Starting the testing for episode 27
+17:34:18 RandomAttackerAgent INFO Playing episode 0
+17:34:24 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:24 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:24 RandomAttackerAgent INFO Starting the testing for episode 28
+17:34:24 RandomAttackerAgent INFO Playing episode 0
+17:34:34 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:34 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:34 RandomAttackerAgent INFO Starting the testing for episode 29
+17:34:34 RandomAttackerAgent INFO Playing episode 0
+17:34:36 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:36 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:36 RandomAttackerAgent INFO Starting the testing for episode 30
+17:34:36 RandomAttackerAgent INFO Playing episode 0
+17:34:38 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:38 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:38 RandomAttackerAgent INFO Tested after 30 episodes.
+                    Wins=2,
+                    Detections=0,
+                    winrate=6.667%,
+                    detection_rate=0.000%,
+                    average_returns=-3.667 +- 27.439,
+                    average_episode_steps=98.833 +- 5.139,
+                    average_win_steps=82.500 +- 10.500,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:34:38 RandomAttackerAgent INFO Starting the testing for episode 31
+17:34:38 RandomAttackerAgent INFO Playing episode 0
+17:34:41 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:41 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:41 RandomAttackerAgent INFO Starting the testing for episode 32
+17:34:41 RandomAttackerAgent INFO Playing episode 0
+17:34:47 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:47 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:47 RandomAttackerAgent INFO Starting the testing for episode 33
+17:34:47 RandomAttackerAgent INFO Playing episode 0
+17:34:50 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:50 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:50 RandomAttackerAgent INFO Starting the testing for episode 34
+17:34:50 RandomAttackerAgent INFO Playing episode 0
+17:34:52 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:52 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:52 RandomAttackerAgent INFO Starting the testing for episode 35
+17:34:52 RandomAttackerAgent INFO Playing episode 0
+17:34:53 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:53 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:53 RandomAttackerAgent INFO Starting the testing for episode 36
+17:34:53 RandomAttackerAgent INFO Playing episode 0
+17:34:55 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:55 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:55 RandomAttackerAgent INFO Starting the testing for episode 37
+17:34:55 RandomAttackerAgent INFO Playing episode 0
+17:34:56 RandomAttackerAgent INFO Episode 0 ended with return-52. Mean returns=-52.0±0.0
+17:34:56 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -52.0±0.0
+17:34:56 RandomAttackerAgent INFO Starting the testing for episode 38
+17:34:56 RandomAttackerAgent INFO Playing episode 0
+17:34:58 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:34:58 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:34:58 RandomAttackerAgent INFO Starting the testing for episode 39
+17:34:58 RandomAttackerAgent INFO Playing episode 0
+17:35:01 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:01 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:01 RandomAttackerAgent INFO Starting the testing for episode 40
+17:35:01 RandomAttackerAgent INFO Playing episode 0
+17:35:13 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:13 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:13 RandomAttackerAgent INFO Tested after 40 episodes.
+                    Wins=3,
+                    Detections=0,
+                    winrate=7.500%,
+                    detection_rate=0.000%,
+                    average_returns=-2.750 +- 28.973,
+                    average_episode_steps=97.950 +- 8.476,
+                    average_win_steps=72.667 +- 16.337,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:35:13 RandomAttackerAgent INFO Starting the testing for episode 41
+17:35:13 RandomAttackerAgent INFO Playing episode 0
+17:35:20 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:20 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:20 RandomAttackerAgent INFO Starting the testing for episode 42
+17:35:20 RandomAttackerAgent INFO Playing episode 0
+17:35:26 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:26 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:26 RandomAttackerAgent INFO Starting the testing for episode 43
+17:35:26 RandomAttackerAgent INFO Playing episode 0
+17:35:42 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:42 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:42 RandomAttackerAgent INFO Starting the testing for episode 44
+17:35:42 RandomAttackerAgent INFO Playing episode 0
+17:35:45 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:45 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:45 RandomAttackerAgent INFO Starting the testing for episode 45
+17:35:45 RandomAttackerAgent INFO Playing episode 0
+17:35:49 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:49 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:49 RandomAttackerAgent INFO Starting the testing for episode 46
+17:35:49 RandomAttackerAgent INFO Playing episode 0
+17:35:50 RandomAttackerAgent INFO Episode 0 ended with return-78. Mean returns=-78.0±0.0
+17:35:50 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -78.0±0.0
+17:35:50 RandomAttackerAgent INFO Starting the testing for episode 47
+17:35:50 RandomAttackerAgent INFO Playing episode 0
+17:35:52 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:52 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:52 RandomAttackerAgent INFO Starting the testing for episode 48
+17:35:52 RandomAttackerAgent INFO Playing episode 0
+17:35:54 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:54 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:54 RandomAttackerAgent INFO Starting the testing for episode 49
+17:35:54 RandomAttackerAgent INFO Playing episode 0
+17:35:57 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:57 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:57 RandomAttackerAgent INFO Starting the testing for episode 50
+17:35:57 RandomAttackerAgent INFO Playing episode 0
+17:35:58 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:35:58 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:35:58 RandomAttackerAgent INFO Tested after 50 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=8.000%,
+                    detection_rate=0.000%,
+                    average_returns=-2.200 +- 29.842,
+                    average_episode_steps=97.940 +- 8.088,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:35:58 RandomAttackerAgent INFO Starting the testing for episode 51
+17:35:58 RandomAttackerAgent INFO Playing episode 0
+17:36:00 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:00 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:00 RandomAttackerAgent INFO Starting the testing for episode 52
+17:36:00 RandomAttackerAgent INFO Playing episode 0
+17:36:04 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:04 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:04 RandomAttackerAgent INFO Starting the testing for episode 53
+17:36:04 RandomAttackerAgent INFO Playing episode 0
+17:36:12 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:12 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:12 RandomAttackerAgent INFO Starting the testing for episode 54
+17:36:12 RandomAttackerAgent INFO Playing episode 0
+17:36:14 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:14 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:14 RandomAttackerAgent INFO Starting the testing for episode 55
+17:36:14 RandomAttackerAgent INFO Playing episode 0
+17:36:18 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:18 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:18 RandomAttackerAgent INFO Starting the testing for episode 56
+17:36:18 RandomAttackerAgent INFO Playing episode 0
+17:36:20 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:20 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:20 RandomAttackerAgent INFO Starting the testing for episode 57
+17:36:20 RandomAttackerAgent INFO Playing episode 0
+17:36:22 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:22 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:22 RandomAttackerAgent INFO Starting the testing for episode 58
+17:36:22 RandomAttackerAgent INFO Playing episode 0
+17:36:23 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:23 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:23 RandomAttackerAgent INFO Starting the testing for episode 59
+17:36:23 RandomAttackerAgent INFO Playing episode 0
+17:36:24 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:24 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:24 RandomAttackerAgent INFO Starting the testing for episode 60
+17:36:24 RandomAttackerAgent INFO Playing episode 0
+17:36:25 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:25 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:25 RandomAttackerAgent INFO Tested after 60 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=6.667%,
+                    detection_rate=0.000%,
+                    average_returns=-3.667 +- 27.439,
+                    average_episode_steps=98.283 +- 7.423,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:36:25 RandomAttackerAgent INFO Starting the testing for episode 61
+17:36:25 RandomAttackerAgent INFO Playing episode 0
+17:36:26 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:26 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:26 RandomAttackerAgent INFO Starting the testing for episode 62
+17:36:26 RandomAttackerAgent INFO Playing episode 0
+17:36:28 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:28 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:28 RandomAttackerAgent INFO Starting the testing for episode 63
+17:36:28 RandomAttackerAgent INFO Playing episode 0
+17:36:28 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:28 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:28 RandomAttackerAgent INFO Starting the testing for episode 64
+17:36:28 RandomAttackerAgent INFO Playing episode 0
+17:36:29 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:29 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:29 RandomAttackerAgent INFO Starting the testing for episode 65
+17:36:29 RandomAttackerAgent INFO Playing episode 0
+17:36:31 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:31 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:31 RandomAttackerAgent INFO Starting the testing for episode 66
+17:36:31 RandomAttackerAgent INFO Playing episode 0
+17:36:32 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:32 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:32 RandomAttackerAgent INFO Starting the testing for episode 67
+17:36:32 RandomAttackerAgent INFO Playing episode 0
+17:36:35 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:35 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:35 RandomAttackerAgent INFO Starting the testing for episode 68
+17:36:35 RandomAttackerAgent INFO Playing episode 0
+17:36:37 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:37 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:37 RandomAttackerAgent INFO Starting the testing for episode 69
+17:36:37 RandomAttackerAgent INFO Playing episode 0
+17:36:41 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:41 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:41 RandomAttackerAgent INFO Starting the testing for episode 70
+17:36:41 RandomAttackerAgent INFO Playing episode 0
+17:36:43 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:43 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:43 RandomAttackerAgent INFO Tested after 70 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=5.714%,
+                    detection_rate=0.000%,
+                    average_returns=-4.714 +- 25.533,
+                    average_episode_steps=98.529 +- 6.899,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:36:43 RandomAttackerAgent INFO Starting the testing for episode 71
+17:36:43 RandomAttackerAgent INFO Playing episode 0
+17:36:45 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:46 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:46 RandomAttackerAgent INFO Starting the testing for episode 72
+17:36:46 RandomAttackerAgent INFO Playing episode 0
+17:36:55 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:36:55 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:36:55 RandomAttackerAgent INFO Starting the testing for episode 73
+17:36:55 RandomAttackerAgent INFO Playing episode 0
+17:37:26 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:27 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:27 RandomAttackerAgent INFO Starting the testing for episode 74
+17:37:27 RandomAttackerAgent INFO Playing episode 0
+17:37:31 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:31 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:31 RandomAttackerAgent INFO Starting the testing for episode 75
+17:37:31 RandomAttackerAgent INFO Playing episode 0
+17:37:32 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:32 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:32 RandomAttackerAgent INFO Starting the testing for episode 76
+17:37:32 RandomAttackerAgent INFO Playing episode 0
+17:37:35 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:35 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:35 RandomAttackerAgent INFO Starting the testing for episode 77
+17:37:35 RandomAttackerAgent INFO Playing episode 0
+17:37:37 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:37 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:37 RandomAttackerAgent INFO Starting the testing for episode 78
+17:37:37 RandomAttackerAgent INFO Playing episode 0
+17:37:39 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:39 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:39 RandomAttackerAgent INFO Starting the testing for episode 79
+17:37:39 RandomAttackerAgent INFO Playing episode 0
+17:37:41 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:41 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:41 RandomAttackerAgent INFO Starting the testing for episode 80
+17:37:41 RandomAttackerAgent INFO Playing episode 0
+17:37:46 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:46 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:46 RandomAttackerAgent INFO Tested after 80 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=5.000%,
+                    detection_rate=0.000%,
+                    average_returns=-5.500 +- 23.974,
+                    average_episode_steps=98.713 +- 6.471,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:37:46 RandomAttackerAgent INFO Starting the testing for episode 81
+17:37:46 RandomAttackerAgent INFO Playing episode 0
+17:37:48 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:48 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:48 RandomAttackerAgent INFO Starting the testing for episode 82
+17:37:48 RandomAttackerAgent INFO Playing episode 0
+17:37:49 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:49 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:49 RandomAttackerAgent INFO Starting the testing for episode 83
+17:37:49 RandomAttackerAgent INFO Playing episode 0
+17:37:50 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:50 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:50 RandomAttackerAgent INFO Starting the testing for episode 84
+17:37:50 RandomAttackerAgent INFO Playing episode 0
+17:37:51 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:51 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:51 RandomAttackerAgent INFO Starting the testing for episode 85
+17:37:51 RandomAttackerAgent INFO Playing episode 0
+17:37:52 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:52 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:52 RandomAttackerAgent INFO Starting the testing for episode 86
+17:37:52 RandomAttackerAgent INFO Playing episode 0
+17:37:54 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:54 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:54 RandomAttackerAgent INFO Starting the testing for episode 87
+17:37:54 RandomAttackerAgent INFO Playing episode 0
+17:37:55 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:55 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:55 RandomAttackerAgent INFO Starting the testing for episode 88
+17:37:55 RandomAttackerAgent INFO Playing episode 0
+17:37:56 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:56 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:56 RandomAttackerAgent INFO Starting the testing for episode 89
+17:37:56 RandomAttackerAgent INFO Playing episode 0
+17:37:57 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:57 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:57 RandomAttackerAgent INFO Starting the testing for episode 90
+17:37:57 RandomAttackerAgent INFO Playing episode 0
+17:37:58 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:37:58 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:37:58 RandomAttackerAgent INFO Tested after 90 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=4.444%,
+                    detection_rate=0.000%,
+                    average_returns=-6.111 +- 22.669,
+                    average_episode_steps=98.856 +- 6.115,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:37:58 RandomAttackerAgent INFO Starting the testing for episode 91
+17:37:58 RandomAttackerAgent INFO Playing episode 0
+17:38:02 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:02 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:02 RandomAttackerAgent INFO Starting the testing for episode 92
+17:38:02 RandomAttackerAgent INFO Playing episode 0
+17:38:04 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:04 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:04 RandomAttackerAgent INFO Starting the testing for episode 93
+17:38:04 RandomAttackerAgent INFO Playing episode 0
+17:38:06 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:06 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:06 RandomAttackerAgent INFO Starting the testing for episode 94
+17:38:06 RandomAttackerAgent INFO Playing episode 0
+17:38:08 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:08 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:08 RandomAttackerAgent INFO Starting the testing for episode 95
+17:38:08 RandomAttackerAgent INFO Playing episode 0
+17:38:09 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:09 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:09 RandomAttackerAgent INFO Starting the testing for episode 96
+17:38:09 RandomAttackerAgent INFO Playing episode 0
+17:38:10 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:10 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:10 RandomAttackerAgent INFO Starting the testing for episode 97
+17:38:10 RandomAttackerAgent INFO Playing episode 0
+17:38:11 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:11 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:11 RandomAttackerAgent INFO Starting the testing for episode 98
+17:38:11 RandomAttackerAgent INFO Playing episode 0
+17:38:12 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:12 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:12 RandomAttackerAgent INFO Starting the testing for episode 99
+17:38:12 RandomAttackerAgent INFO Playing episode 0
+17:38:14 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:14 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:14 RandomAttackerAgent INFO Starting the testing for episode 100
+17:38:14 RandomAttackerAgent INFO Playing episode 0
+17:38:15 RandomAttackerAgent INFO Episode 0 ended with return-99. Mean returns=-99.0±0.0
+17:38:15 RandomAttackerAgent INFO Final results for RandomAttackerAgent after 1 episodes: -99.0±0.0
+17:38:15 RandomAttackerAgent INFO Tested after 100 episodes.
+                    Wins=4,
+                    Detections=0,
+                    winrate=4.000%,
+                    detection_rate=0.000%,
+                    average_returns=-6.600 +- 21.556,
+                    average_episode_steps=98.970 +- 5.811,
+                    average_win_steps=74.250 +- 14.411,
+                    average_detected_steps=nan +- nan
+                    average_max_steps_steps=0.000 +- 0.000,
+                    
+17:38:15 RandomAttackerAgent INFO Final evaluation after 100 episodes.
+            Wins=4,
+            Detections=0,
+            winrate=4.000%,
+            detection_rate=0.000%,
+            average_returns=-6.600 +- 21.556,
+            average_episode_steps=98.970 +- 5.811,
+            average_win_steps=74.250 +- 14.411,
+            average_detected_steps=nan +- nan
+            average_max_steps_steps=0.000 +- 0.000,
+            
+17:38:15 RandomAttackerAgent INFO Terminating interaction
+17:38:15 RandomAttackerAgent INFO Socket closed

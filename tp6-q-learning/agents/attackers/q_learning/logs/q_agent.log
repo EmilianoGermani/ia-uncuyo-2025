@@ -1,0 +1,329 @@
+17:43:43 QAgent INFO Agent created
+17:43:43 QAgent INFO Loading the previous model in file /home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/q_agent_marl.experiment.pickle
+17:43:43 QAgent INFO Successfully loading file /home/emiliano/Documentos/Facultad/3er anio/Segundo Semestre/Inteligencia Artificial 1/Github IA/NetSecGameAgents-AI-Course/q_agent_marl.experiment.pickle
+17:43:43 QAgent INFO Registering agent as Attacker
+17:43:44 QAgent INFO 	Registration successful! {'message': 'Welcome QAgent, registred as Attacker', 'max_steps': 100, 'goal_description': 'Exfiltrate data from Samba server to remote C&C server.', 'actions': ['ActionType.ScanNetwork', 'ActionType.FindServices', 'ActionType.FindData', 'ActionType.ExploitService', 'ActionType.ExfiltrateData', 'ActionType.BlockIP', 'ActionType.JoinGame', 'ActionType.QuitGame', 'ActionType.ResetGame'], 'configuration_hash': '3bf6e7ba9edbcf662e4338e7e60a9528c9c6f5b13579a570e3d999487ae8e3d7'}
+17:43:45 QAgent INFO Using commits. NetSecEnv: 84f180a0d756f5bfa1813fb7968dcadd961697f7
+. Agents: 84f180a0d756f5bfa1813fb7968dcadd961697f7
+
+17:43:45 QAgent WARNING Environment config file not found: ./env/netsecenv_conf.yaml
+17:43:45 QAgent INFO Epsilon Start: 0.9
+17:43:45 QAgent INFO Epsilon End: 0.1
+17:43:45 QAgent INFO Epsilon Max Episodes: 8000
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.6, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.6, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.3, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.1.3}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.1.3}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.1.3}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.1.3}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.3, 'source_host': 192.168.2.6, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:45 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.6, 'source_host': 192.168.1.3, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.1.3}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.1.3}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.1, 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.3}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.6, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.6, 'source_host': 192.168.1.3, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.6, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.6}>
+17:43:46 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.1, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.4, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.6, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.1, 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 192.168.2.6}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.1.3}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.1.2}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 213.47.23.195}>
+17:43:47 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.3, 'target_service': Service(name='5432/tcp, postgresql', type='passive', version='14.3.0', is_local=False), 'source_host': 192.168.1.2}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 192.168.1.3}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.1.3}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.6, 'source_host': 192.168.2.6}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.6, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.2}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.1.3}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.4, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.1.3}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.4, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.6}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.1.3}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.1.2}>
+17:43:48 QAgent ERROR Testing episode 1: Steps=100. Reward -100. States in Q_table = 62242
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.2, 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=148, type='log')}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=148, type='log')}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.5}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:48 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.2, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.3, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.3}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.6, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.5, 'data': Data(owner='system', id='logfile', size=217, type='log')}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.3}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.5, 'data': Data(owner='system', id='logfile', size=217, type='log')}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.2, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.2.2, 'data': Data(owner='system', id='logfile', size=293, type='log')}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.3}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.2.3}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.3}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.2}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 213.47.23.195}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:49 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.3, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.2, 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.2, 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.3, 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.3, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.1, 'source_host': 213.47.23.195}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195, 'data': Data(owner='system', id='logfile', size=148, type='log')}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.3, 'source_host': 192.168.2.5, 'data': Data(owner='system', id='logfile', size=217, type='log')}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.3, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.2}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.3, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.3}>
+17:43:50 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.3}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:51 QAgent ERROR Testing episode 2: Steps=100. Reward -100. States in Q_table = 62326
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.2.0/24, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='windows login', type='passive', version='10.0.19041', is_local=True), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.1.2, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='Data3FromServer1', size=0, type='')}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='Data3FromServer1', size=0, type='')}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='DataFromServer1', size=0, type='')}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 192.168.2.5}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.3, 'source_host': 192.168.1.2}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:51 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.1.2, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.2, 'source_host': 213.47.23.195, 'data': Data(owner='User1', id='Data3FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5, 'data': Data(owner='system', id='logfile', size=70, type='log')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='3389/tcp, ms-wbt-server', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 192.168.2.5, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='windows login', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='bash', type='passive', version='5.0.0', is_local=True), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.6, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.5, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.6, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.6, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.3.0/24, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='system', id='logfile', size=443, type='log')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.6, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.1.2, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='445/tcp, microsoft-ds', type='passive', version='10.0.19041', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.2.5, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.1.2, 'source_host': 213.47.23.195, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.2, 'target_service': Service(name='powershell', type='passive', version='10.0.19041', is_local=True), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 213.47.23.195, 'target_service': Service(name='listener', type='passive', version='1.0.0', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 213.47.23.192/26, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.2.5, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.4, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='DataFromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='User2', id='Data2FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.4, 'target_service': Service(name='80/tcp, http', type='passive', version='1.4.54', is_local=False), 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 213.47.23.195, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='Data3FromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindData|{'target_host': 213.47.23.195, 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExfiltrateData|{'target_host': 192.168.2.5, 'source_host': 192.168.1.2, 'data': Data(owner='User1', id='DataFromServer1', size=0, type='')}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.2.5}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ScanNetwork|{'target_network': 192.168.1.0/24, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 192.168.1.2}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.ExploitService|{'target_host': 192.168.1.4, 'target_service': Service(name='22/tcp, ssh', type='passive', version='8.1.0', is_local=False), 'source_host': 213.47.23.195}>
+17:43:52 QAgent INFO Action selected:Action <ActionType.FindServices|{'target_host': 192.168.1.2, 'source_host': 213.47.23.195}>
+17:43:53 QAgent ERROR Testing episode 3: Steps=100. Reward -100. States in Q_table = 62421
+17:43:53 QAgent INFO Final model performance after 3 episodes.
+            Wins=0,
+            Detections=0,
+            winrate=0.000%,
+            detection_rate=0.000%,
+            average_returns=-100.000 +- 0.000,
+            average_episode_steps=100.000 +- 0.000,
+            average_win_steps=nan +- nan,
+            average_detected_steps=nan +- nan
+            average_max_steps_steps=0.000 +- 0.000,
+            epsilon=0.9
+            
+17:43:53 QAgent ERROR Terminating interaction
+17:43:53 QAgent INFO Socket closed
