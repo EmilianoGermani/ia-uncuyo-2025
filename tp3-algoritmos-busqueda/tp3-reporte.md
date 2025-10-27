@@ -96,10 +96,12 @@ El algoritmo **A\*** ofrece el mejor rendimiento global, logrando soluciones óp
 
 ## 5. Conclusiones
 
-El análisis evidencia que los algoritmos informados (A\*, UCS) superan a los no informados (BFS, DFS, DLS) en eficiencia y calidad de solución.  
-A\* logra un equilibrio óptimo entre exploración, tiempo y costo, gracias a la utilización de una heurística admisible (distancia Manhattan).  
+El análisis evidencia que el algoritmo informado **A\***, junto con **UCS** (no informado pero óptimo en costo), superan al resto en eficiencia y calidad de solución.  
+A\* logra un equilibrio óptimo entre exploración, tiempo y costo, gracias a la utilización de una heurística admisible.  
+Por su parte, UCS, aunque no utiliza heurística, mantiene la **optimalidad en costo** y una excelente eficiencia de búsqueda.
 
-Los resultados demuestran que, en entornos con diferentes costos de movimiento, los algoritmos informados logran adaptarse mejor, manteniendo bajo el número de estados expandidos y el costo total de las acciones.
+Los resultados demuestran que, en entornos con diferentes costos de movimiento, las **búsquedas informadas como A\*** logran adaptarse mejor, mientras que **UCS** destaca dentro de las no informadas por su capacidad para encontrar soluciones de costo mínimo.
+
 
 ## 6. Archivos generados
 
