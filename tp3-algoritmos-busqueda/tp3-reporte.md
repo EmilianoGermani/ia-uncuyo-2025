@@ -12,7 +12,7 @@ Los algoritmos implementados fueron:
 * **Búsqueda en Profundidad (DFS)**
 * **Búsqueda en Profundidad Limitada (DLS50)**
 * **Búsqueda de Costo Uniforme (UCS)**
-* **Búsqueda A\*** (A estrella)
+* **Búsqueda A Estrella**
 
 El entorno consiste en un mapa cuadrado de tamaño 50×50, generado aleatoriamente con celdas seguras (‘F’), agujeros (‘H’), un inicio (‘S’) y una meta (‘G’).  
 El agente posee un **límite de vida de 1000 pasos**: si supera ese valor sin alcanzar la meta, se considera que falló la búsqueda.
@@ -80,7 +80,7 @@ Los resultados fueron almacenados en el archivo **`results.csv`**, y los anális
 
 ## 4. Comparación general
 
-| Algoritmo | Eficiencia | Optimalidad | Tiempo | Observaciones |
+| Algoritmo | Eficiencia | Optimo | Tiempo | Observaciones |
 |------------|-------------|-------------|---------|----------------|
 | **Aleatoria** | Muy baja | ❌ | Bajo | Sin dirección heurística, éxito aleatorio |
 | **BFS** | Alta | ✅ | Medio | Encuentra caminos óptimos, alto consumo de memoria |

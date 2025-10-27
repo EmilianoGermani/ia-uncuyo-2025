@@ -31,8 +31,6 @@ Se basa en la **evolución natural**. Trabaja con una población de soluciones q
 
 Genera soluciones completamente al azar y conserva la mejor encontrada. No utiliza información heurística ni dirección de mejora, por lo que sirve como referencia base para comparar el rendimiento de los algoritmos guiados.
 
----
-
 ## 3. Metodología experimental
 
 Para todos los algoritmos se trabajó con los siguientes parámetros:
@@ -42,8 +40,6 @@ Para todos los algoritmos se trabajó con los siguientes parámetros:
 * **Límite de estados:** 10.000.
 
 El archivo de resultados consolidado fue **`tp4-Nreinas.csv`**, y el análisis se realizó mediante el script **`analysis.py`**, que generó los gráficos comparativos y un resumen estadístico de las ejecuciones.
-
----
 
 ## 4. Resultados y análisis
 
@@ -77,8 +73,6 @@ En términos de cantidad de estados:
 * **Hill Climbing** suele explorar pocos estados antes de converger.
 * **Simulated Annealing** y **Genetic Algorithm** recorren una mayor cantidad de configuraciones, lo que les permite evitar óptimos locales.
 * **Random Search** alcanza el límite de 10.000 estados en la mayoría de ejecuciones.
-
----
 
 ## 5. Evolución de H()
 

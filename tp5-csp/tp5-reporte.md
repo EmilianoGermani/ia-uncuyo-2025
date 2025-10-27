@@ -12,7 +12,7 @@ Un Sudoku de 9×9 se modela como un **problema de satisfacción de restricciones
   2. **Columnas**: los 9 valores de cada columna deben ser todos distintos (**AllDifferent**).
   3. **Bloques 3×3**: los 9 valores de cada subcuadro 3×3 deben ser todos distintos (**AllDifferent**).
 
-Estas restricciones pueden expresarse como **binarias** (\(X_{a} \neq X_{b}\) cuando comparten fila/columna/bloque) o como restricciones globales **AllDifferent**. El grafo de restricciones conecta cada celda con las celdas de su misma fila, columna y bloque; cada nodo tiene 20 vecinos (≈810 aristas en total).
+Estas restricciones pueden expresarse como **binarias** (Xa != Xb cuando comparten fila/columna/bloque) o como restricciones globales **AllDifferent**. El grafo de restricciones conecta cada celda con las celdas de su misma fila, columna y bloque; cada nodo tiene 20 vecinos (≈810 aristas en total).
 
 ## 2. AC‑3 en el mapa de Australia
 
@@ -44,9 +44,9 @@ Cada arco puede revisarse un número constante de veces y cada operación `REVIS
 ## 4. N‑Reinas como CSP — Implementación
 
 **Modelado**: variables Xc (fila de la reina en la **columna** c), dominios {0,...,N-1}.  
-**Restricciones binarias** entre columnas i<j:
-- **Filas distintas:** Xi =! Xj
-- **Diagonales:** |Xi - Xj| =! |i - j|
+**Restricciones binarias** entre columnas i < j:
+**Filas distintas:** Xi =! Xj
+**Diagonales:** |Xi - Xj| =! |i - j|
 
 **Algoritmos implementados** (en `code/`):
 - **Backtracking (BT)** — `nqueens_csp_backtracking.py`: búsqueda en profundidad con orden de valores pseudoaleatorio por columna controlado por `seed`.
