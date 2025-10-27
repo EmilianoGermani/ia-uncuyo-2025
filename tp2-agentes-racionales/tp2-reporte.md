@@ -1,70 +1,84 @@
-Informe Comparativo – Agentes en el Mundo de la Aspiradora
-1. Introducción
+Trabajo Práctico N°2 – Agentes Racionales: Reflexivo vs Aleatorio
 
-En este trabajo se analiza el desempeño de diferentes agentes en el entorno clásico del mundo de la aspiradora (Russell & Norvig). El objetivo es observar cómo varía la performance de los agentes en función del tamaño del entorno y del nivel de suciedad inicial.
+## 1. Introducción
 
-Los agentes evaluados son:
+El presente trabajo práctico tiene como objetivo analizar el comportamiento y el rendimiento de diferentes tipos de agentes racionales en entornos de limpieza, siguiendo el modelo de agente-ambiente propuesto en el libro *Artificial Intelligence: A Modern Approach* de Russell y Norvig.  
 
-Agente Reflexivo: se basa en reglas simples como limpiar si la celda está sucia y recorrer el entorno siguiendo un patrón de serpiente, desde la posicion donde empieza hasta llegar a la ultima celda de la ultima fila.
+Se implementaron y compararon dos agentes principales:
+- **RandomAgent:** selecciona sus acciones completamente al azar, pudiendo incluso ignorar la limpieza de una celda sucia.
+- **ReflexiveAgent:** toma decisiones basadas en condiciones perceptuales inmediatas, limpiando cuando detecta suciedad y moviéndose de forma sistemática en caso contrario.
 
-Agente Aleatorio: selecciona sus acciones sin un criterio específico, eligiendo movimientos al azar, pero si encuentra una celda sucia la limpia.
+El análisis se realizó utilizando el entorno de simulación **Vacuum Cleaner World**, con escenarios de diferentes tamaños y niveles de suciedad inicial (dirt_rate). Los resultados fueron procesados estadísticamente y representados mediante gráficos tipo **boxplot**, permitiendo sintetizar la variabilidad de desempeño de cada agente.
 
-El foco del análisis está en comparar cuántas celdas son efectivamente limpiadas según el porcentaje de suciedad y cómo esto se ve afectado por el tamaño del mapa.
+## 2. Objetivos
 
-2. Metodología para la comparación de ambos agentes
+- Comprender el concepto de racionalidad en agentes reactivos simples.  
+- Implementar y ejecutar simulaciones de agentes en entornos parcialmente observables.  
+- Comparar el rendimiento de agentes aleatorios y reflexivos en múltiples configuraciones.  
+- Analizar la relación entre el tamaño del entorno, el nivel de suciedad y la eficiencia del agente.  
+- Presentar los resultados mediante visualizaciones estadísticas (boxplots) que muestren el promedio y la dispersión de los experimentos.
 
-Tamaños de mapa evaluados: 2x2, 4x4, 8x8, 16x16, 32x32, 64x64 y 128x128.
+## 3. Desarrollo
 
-Niveles de suciedad inicial: 0.1, 0.2, 0.4 y 0.8.
+Las simulaciones fueron realizadas utilizando el entorno de ejecución **Vacuum Cleaner World**, provisto por la cátedra. Se configuraron entornos cuadrados de los siguientes tamaños: 2×2, 4×4, 8×8, 16×16, 32×32, 64×64 y 128×128.  
+Para cada tamaño, se ejecutaron experimentos con cuatro niveles distintos de suciedad inicial (`dirt_rate`): 0.1, 0.2, 0.4 y 0.8.  
+Cada combinación fue repetida 10 veces, resultando en un total de **560 ejecuciones** (7 tamaños × 4 niveles × 10 repeticiones × 2 agentes).
 
-Métrica medida: número de celdas limpiadas por el agente.
+Los agentes se implementaron de la siguiente manera:
 
-Procedimiento: para cada combinación de tamaño y porcentaje de suciedad se ejecutaron varias corridas y se representaron los resultados en un gráfico.
+### 3.1 RandomAgent
+El **RandomAgent** selecciona su acción siguiente de manera completamente aleatoria entre las posibles (`up`, `down`, `left`, `right`, `suck`).  
+Esto implica que incluso si la celda actual está sucia, el agente puede decidir no limpiarla, reflejando un comportamiento irracional.  
+Su desempeño varía significativamente entre corridas debido al azar inherente.
 
-Visualización: se generó un gráfico por cada tamaño de mapa, en el que el eje X representa el porcentaje de suciedad inicial y el eje Y la cantidad de celdas limpiadas en promedio.
+### 3.2 ReflexiveAgent
+El **ReflexiveAgent** toma decisiones basadas en su percepción inmediata. Si la celda actual está sucia, ejecuta la acción `suck`. En caso contrario, sigue un patrón sistemático de movimiento en forma de **serpiente** (recorriendo filas alternadas).  
+El agente se detiene automáticamente cuando el entorno informa que la simulación ha finalizado, evitando ciclos infinitos.
 
-3. Resultados
-   
-3.1. Entorno 2x2
+## 4. Resultados
 
-En el tablero más chico, de 2×2, la diferencia entre los agentes es prácticamente mínima. Ambos logran limpiar una cantidad similar de casillas, ya que el espacio reducido no permite que aparezcan grandes variaciones de desempeño, pero el agente random sigue logrando limpiar el total de casillas en comparacion con el agente reflexivo.
-<img width="1546" height="801" alt="2x2" src="https://github.com/user-attachments/assets/980acd53-cba4-4bd4-874f-b168e6a1ba8e" />
+Los resultados obtenidos fueron exportados en formato CSV y luego analizados con Python utilizando las librerías *pandas*, *matplotlib* y *seaborn*.  
+Los valores de desempeño (`performance`) representan la cantidad de celdas limpias durante la simulación.
 
-3.2. Entorno 4x4
+A continuación, se presentan los gráficos tipo **boxplot** generados a partir de las ejecuciones, agrupando los resultados de ambos agentes para cada tamaño de entorno.
 
-El gráfico muestra que el agente aleatorio logra limpiar más casillas que el reflexivo en un tablero pequeño de 4×4. La diferencia es clara, ya que el espacio reducido favorece al random, que termina cubriendo gran parte del tablero casi sin importar la secuencia de movimientos. El reflexivo, en cambio, se ve limitado en su capacidad de alcanzar tantas casillas.
-<img width="1546" height="780" alt="4x4" src="https://github.com/user-attachments/assets/2e21e6cc-4f3f-4d2f-9761-0de849163ef9" />
+### 4.1 Tamaño 2×2
+![Boxplot 2x2](images/2x2_boxplot.png)
 
-3.3. Entorno 8x8
+### 4.2 Tamaño 4×4
+![Boxplot 4x4](images/4x4_boxplot.png)
 
-El agente random continúa siendo superior en este tamaño, alcanzando una mayor proporción de casillas limpias. El reflexivo todavía queda por detrás, lo que refuerza la tendencia de que en tableros pequeños e intermedios el random resulta más efectivo en cuanto a cantidad de celdas limpiadas.
-<img width="1547" height="776" alt="8x8" src="https://github.com/user-attachments/assets/c57bbea3-1f39-40ac-bed7-769a12e15be6" />
+### 4.3 Tamaño 8×8
+![Boxplot 8x8](images/8x8_boxplot.png)
 
-3.4. Entorno 16x16
+### 4.4 Tamaño 16×16
+![Boxplot 16x16](images/16x16_boxplot.png)
 
-En este tamaño se confirma que el agente aleatorio logra limpiar una cantidad considerablemente mayor de casillas en todas las pruebas realizadas. El reflexivo, en cambio, prácticamente no consigue limpiar: de las 40 corridas solo obtuvo resultados en un único caso, correspondiente a un dirty_rate de 0.1, mientras que en el resto no alcanzó a limpiar ninguna casilla. Esto muestra que su desempeño en este escenario es casi nulo frente al random.
+### 4.5 Tamaño 32×32
+![Boxplot 32x32](images/32x32_boxplot.png)
 
-<img width="1548" height="783" alt="16x16" src="https://github.com/user-attachments/assets/361e4c29-80e8-4bce-95cd-7702ca436202" />
+### 4.6 Tamaño 64×64
+![Boxplot 64x64](images/64x64_boxplot.png)
 
-3.5. Entorno 32x32
+### 4.7 Tamaño 128×128
+![Boxplot 128x128](images/128x128_boxplot.png)
 
-Aquí se empieza a notar un cambio en la tendencia. Si bien el random todavía mantiene un desempeño relativamente bueno, el reflexivo empieza a mejorar y logra un mejor desempeño que el agente random en la mayoria de los casos. Esto sugiere que en tableros más grandes el reflexivo puede aprovechar mejor su estrategia.
-<img width="1553" height="777" alt="32x32" src="https://github.com/user-attachments/assets/8aecea3f-c13b-4da3-a068-48611d361ed4" />
+## 5. Análisis e interpretación
 
-3.6. Entorno 64x64
+Los gráficos muestran una tendencia clara a medida que aumentan el tamaño del entorno y la tasa de suciedad:
 
-En este tamaño ya se observa que el agente reflexivo supera al random. El aleatorio, al depender de movimientos sin dirección, no consigue mantener su nivel de limpieza cuando la superficie se vuelve más extensa. En cambio, el reflexivo muestra un mejor desempeño y logra limpiar más casillas en promedio.
-<img width="1553" height="779" alt="64x64" src="https://github.com/user-attachments/assets/de8a78fb-da31-4e43-bdbd-74b06cf0cf7f" />
+- En entornos pequeños (2×2 y 4×4), ambos agentes presentan rendimientos similares debido a la escasa complejidad del entorno.  
+- A partir de tamaños medianos (8×8 y 16×16), el **ReflexiveAgent** comienza a mostrar una ventaja consistente en términos de rendimiento promedio y menor dispersión.  
+- En entornos grandes (32×32, 64×64 y 128×128), el **ReflexiveAgent** supera ampliamente al **RandomAgent**, mostrando una mayor eficiencia y estabilidad en su desempeño.  
 
-3.7. Entorno 128x128
+El **RandomAgent**, al tomar decisiones sin basarse en la percepción del entorno, exhibe una alta variabilidad y un rendimiento generalmente bajo, aunque mejora levemente con valores altos de `dirt_rate` por pura probabilidad de limpiar algo.
 
-La diferencia entre ambos agentes se amplía a favor del reflexivo. El random cae notablemente en la cantidad de casillas cubiertas, mientras que el reflexivo mantiene un progreso sostenido, consolidándose como la mejor opción en tableros grandes.
-<img width="1552" height="778" alt="128x128" src="https://github.com/user-attachments/assets/45d5bfa5-f335-46e6-ab97-7a635d0bb38f" />
+En contraste, el **ReflexiveAgent** demuestra un comportamiento racional al utilizar información perceptual local para maximizar su rendimiento, manteniendo un patrón de exploración más eficiente.
 
-4. Conclusiones
+## 6. Conclusiones
 
-El agente reflexivo demuestra ser más eficiente tamaños mas grandes del spacio, manteniendo un nivel de limpieza cercano al máximo esperado.
+- El uso de **boxplots** permitió representar de forma más clara y sintética la variabilidad de resultados en comparación con las gráficas anteriores.  
+- Los resultados confirman que los agentes **reflexivos simples** pueden superar significativamente a los **aleatorios** en entornos más complejos, siempre que dispongan de percepciones inmediatas precisas.  
+- La racionalidad de un agente no implica perfección, sino la capacidad de seleccionar acciones que maximicen su rendimiento esperado según el conocimiento disponible.  
+- El **ReflexiveAgent** logra un equilibrio entre simplicidad y efectividad, demostrando un comportamiento racional acorde al modelo teórico estudiado.  
 
-El agente aleatorio solo funciona aceptablemente en entornos pequeños (2x2, 4x4, 8x8 y 16x16). En mapas más grandes su rendimiento cae bastante.
-
-Los resultados confirman que incluso una estrategia simple basada en percepciones supera a la aleatoriedad pura, especialmente cuando la complejidad del entorno aumenta.

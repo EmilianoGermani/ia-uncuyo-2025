@@ -4,104 +4,87 @@ from typing import Optional
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from base_agent import BaseAgent
 
-class RandomAgent(BaseAgent):
+class ReflexiveAgent(BaseAgent):
     """
-    Agente de ejemplo que demuestra cómo crear un nuevo tipo de agente.
-    
-    Este agente implementa una estrategia simple como ejemplo:
-    - Limpia si hay suciedad
-    - Se mueve en un patrón circular cuando no hay suciedad
-    
-    Para usar este agente como plantilla:
-    1. Copia este archivo y renómbralo
-    2. Cambia el nombre de la clase
-    3. Implementa tu lógica en el método think()
-    4. Registra el agente en run_agent.py
+    Agente reflexivo: limpia si la celda está sucia, de lo contrario se mueve
+    en un patrón tipo 'serpiente' por la grilla. Se detiene cuando el entorno
+    indica que la simulación ha terminado.
     """
-    
-    def __init__(self, server_url: str = "http://localhost:5000", 
+
+    def __init__(self, server_url: str = "http://localhost:5000",
                  enable_ui: bool = False,
-                 record_game: bool = False, 
+                 record_game: bool = False,
                  replay_file: Optional[str] = None,
                  cell_size: int = 60,
                  fps: int = 10,
                  auto_exit_on_finish: bool = True,
                  live_stats: bool = False):
-        super().__init__(server_url, "ExampleAgent", enable_ui, record_game, 
-                        replay_file, cell_size, fps, auto_exit_on_finish, live_stats)
-        
-        # Estado interno para movimiento circular
-        self.movement_sequence = [self.up, self.right, self.down, self.left]
-        self.current_move_index = 0
-    
+        super().__init__(server_url, "ReflexiveAgent", enable_ui, record_game,
+                         replay_file, cell_size, fps, auto_exit_on_finish, live_stats)
+
+        # Secuencia de movimiento tipo serpiente
+        self.direction = "right"
+
     def get_strategy_description(self) -> str:
-        return "Clean if dirty, move in circular pattern when clean"
-    
+        return "Clean if dirty, otherwise sweep grid in snake pattern"
+
     def think(self):
         if not self.is_connected():
             return False
 
         perception = self.get_perception()
-        if not perception or perception.get('is_finished', True):
+        if not perception:
+            return False
+
+        # 🚨 Detener ejecución si el entorno indica fin
+        if perception.get("is_finished", False):
             return False
 
         x, y = perception.get('position', (0, 0))
         is_dirty = perception.get('is_dirty', False)
+        grid = self.get_environment_state().get('grid', [])
 
-        # Limpiar si hay suciedad
+        # ✅ Si la celda está sucia, limpiar
         if is_dirty:
             return self.suck()
 
-        # Obtener tamaño dinámico del grid
-        grid = self.get_environment_state().get('grid', [])
+        # ✅ Movimiento tipo serpiente
+        width = len(grid[0])
+        height = len(grid)
 
-        # Patrón serpiente
-        if y % 2 == 0:  # fila par -> derecha
-            if x < len(grid[0])- 1:
+        if y % 2 == 0:  # fila par: mover a la derecha
+            if x < width - 1:
                 return self.right()
-            elif y < len(grid) - 1:
+            elif y < height - 1:
                 return self.down()
             else:
-                return True
-        else:  # fila impar -> izquierda
+                return False  # fin de recorrido
+        else:  # fila impar: mover a la izquierda
             if x > 0:
                 return self.left()
-            elif y < len(grid) - 1:
+            elif y < height - 1:
                 return self.down()
             else:
-                return True
+                return False  # fin de recorrido
 
 
-def run_example_agent_simulation(size_x: int = 8, size_y: int = 8, 
-                                dirt_rate: float = 0.3, 
-                                server_url: str = "http://localhost:5000",
-                                verbose: bool = True) -> int:
-    """
-    Función de conveniencia para ejecutar una simulación con ExampleAgent.
-    """
-    agent = ExampleAgent(server_url)
-    
+# 🔹 Ejecución individual de prueba
+def run_reflexive_agent_simulation(size_x: int = 8, size_y: int = 8,
+                                   dirt_rate: float = 0.3,
+                                   server_url: str = "http://localhost:5000",
+                                   verbose: bool = True) -> int:
+    agent = ReflexiveAgent(server_url)
     try:
         if not agent.connect_to_environment(size_x, size_y, dirt_rate):
             return 0
-        
         performance = agent.run_simulation(verbose)
         return performance
-    
     finally:
         agent.disconnect()
 
+
 if __name__ == "__main__":
-    print("Example Agent - Circular Movement Pattern")
-    print("Make sure the environment server is running on localhost:5000")
-    print("Strategy: Clean if dirty, move in circular pattern when clean")
-    print()
-    
-    performance = run_example_agent_simulation(verbose=True)
+    print("Reflexive Agent – Snake Pattern Strategy")
+    print("Running test simulation...\n")
+    performance = run_reflexive_agent_simulation(verbose=True)
     print(f"\nFinal performance: {performance}")
-    
-    print("\nTo create your own agent:")
-    print("1. Copy this file and rename it")
-    print("2. Change the class name")  
-    print("3. Implement your logic in the think() method")
-    print("4. Register it in run_agent.py AVAILABLE_AGENTS dictionary")
